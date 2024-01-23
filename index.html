@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<!-- tailwind and daisy ui -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- custom color css-->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'primary': '#FF4240'
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .manrope{
+        font-family: 'Manrope', sans-serif;
+        }
+        .image-1{
+            background-image: url('./Images/2.png');
+            background-repeat: no-repeat;
+            padding: 100px;
+        }
+        .image-2{
+            background-image: url('./Images/3.png');
+            background-repeat: no-repeat;
+            padding: 100px;
+        }
+</style>
+</head>
+<body class="manrope "> 
+    <header class="container mx-auto">
+       <nav>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>home</a></li>
+                  <li><a>about</a></li>
+                  <li><a>pages</a></li>
+                  <li><a>blog</a></li>
+                  <li><a>contact</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-black font-extrabold text-xl">Hockeys</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>home</a></li>
+                <li><a>about</a></li>
+                <li><a>pages</a></li>
+                <li><a>blog</a></li>
+                <li><a>contact</a></li>
+            </ul>
+            </div>
+            <div class="navbar-end">
+                <img class="w-6 h-6 mr-6" src="./Images/ae3d9e7e-9d38-41f7-89c4-d518b3ca9348.png">
+              <a class="btn bg-primary text-white">Get Ticket</a>
+            </div>
+          </div>
+       </nav>
+
+    </header>
+    <main class="container mx-auto">
+        <section class="mt-10">
+            <div class="carousel lg:relative w-fit ml-5 mr-3">
+            <div id="item1" class="carousel-item w-full">
+              <img src="./Images/1.png" class="w-full" />
+            </div> 
+            <div id="item2" class="carousel-item w-full">
+              <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="rounded-2xl" />
+            </div> 
+            <div class="lg:absolute bottom-4 right-4  text-white w-96 h-40 p-8 bg-black rounded-2xl">
+                <h3 class="mb-4 text-xl">Meet all the heroes from the field</h3>
+                <p class="text-base">you are more than welcome to embark your future all the way through to achieve something big</p>
+            </div>
+            </div>
+          <div class="flex justify-center w-full py-2 gap-2">
+            <a href="#item1" class="btn btn-xs">1</a> 
+            <a href="#item2" class="btn btn-xs">2</a> 
+          </div>
+        </section>
+
+        <section class="mt-28 text-center">
+            
+            <h2 class=" lg:text-3xl lg:font-extrabold">Professional Hockeys Club</h2>
+            <p  class="lg:text-base lg:font-medium">we are like to build our national hockey team by some of our experimental trial through out the event</p>
+    <div class="flex lg:flex-row lg:justify-evenly flex-col gap-6 mt-20">
+        <div>
+            <div class="radial-progress text-red-600" style="--value:87;" role="progressbar">87%</div>
+            <h4>Prayer Facility</h4>
+            <p>to get more resources</p>
+       </div>
+        <div>
+            <div class="radial-progress text-green-500" style="--value:95;" role="progressbar">95%</div>
+            <h4>Experienced Coach</h4>
+            <p>for the best teaching progression</p>
+        </div>
+        <div>
+            <div class="radial-progress text-yellow-500" style="--value:90;" role="progressbar">90%</div>
+            <h4>Senior Player</h4>
+            <p> will get more care for their gaming plan</p>
+        </div>
+        <div>
+            <div class="radial-progress text-blue-600" style="--value:80;" role="progressbar">80%</div>
+            <h4>Training Ground</h4>
+            <p>occur twice in day</p>
+        </div>
+
+    </div>
+
+        </section>
+<section class="text-center mt-32">
+    <div >
+        <h3>Program Sections</h3>
+        <p>  </p>
+    </div>
+    <div class="flex justify-center ">
+<div class="image-1 flex-1">
+<h3>Junior Program</h3>
+<p></p>
+<button class="bg-primary rounded-lg">Register Now!</button>
+</div>
+<div class="image-2 flex-1">
+<h3>Teenager Program</h3>
+<p></p>
+<button class="bg-primary rounded-lg">Register Now!</button>
+</div>
+
+</div>
+<div class="image-3">
+    <h3>Professional Program</h3>
+    <p></p>
+    <button class="bg-primary rounded-lg">Register Now!</button>
+</div>
+    
+</section>
+
+
+    </main>
+    <footer></footer>
+
+</body>
+</html>
